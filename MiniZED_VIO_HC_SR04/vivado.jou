@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  3 10:30:46 2019
+# Process ID: 9456
+# Current directory: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18212 C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.xpr
+# Log file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vivado.log
+# Journal file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_HC_SR04_0_0
+create_bd_design "matrix"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+delete_bd_objs [get_bd_cells axi_gpio_0]
+create_bd_cell -type module -reference HC_SR04 HC_SR04_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {16} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins HC_SR04_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {pl_led_g ( pl_led_g ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports pl_led_g]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {15} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins HC_SR04_0/sonar_trig] [get_bd_pins axi_gpio_0/gpio_io_i]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+undo
+undo
+undo
+connect_bd_net [get_bd_pins HC_SR04_0/centimeter] [get_bd_pins axi_gpio_0/gpio_io_i]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+create_bd_port -dir I sonar_echo
+connect_bd_net [get_bd_pins /HC_SR04_0/sonar_echo] [get_bd_ports sonar_echo]
+endgroup
+startgroup
+create_bd_port -dir O sonar_trig
+connect_bd_net [get_bd_pins /HC_SR04_0/sonar_trig] [get_bd_ports sonar_trig]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_CLK1_PORT {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_1/GPIO]
+endgroup
+set_property name GPIO_M [get_bd_intf_ports GPIO_0]
+set_property location {1007 236} [get_bd_intf_ports GPIO_M]
+set_property name axi_gpio_matrix [get_bd_cells axi_gpio_1]
+create_peripheral xilinx.com user matrix_ip 1.0 -dir C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo
+add_peripheral_interface S00_AXI_ws2812 -interface_mode master -axi_type lite [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
+generate_peripheral -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
+set_property  ip_repo_paths  C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo/matrix_ip_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_matrix_ip_v1_0 -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+create_peripheral xilinx.com user ws2812_ip 1.0 -dir C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo
+add_peripheral_interface M00_AXI_ws2812 -interface_mode master -axi_type lite [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
+generate_peripheral -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
+set_property  ip_repo_paths  {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo/ws2812_ip_1.0 C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_ws2812_ip_v1_0 -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+close [ open C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd w ]
+add_files C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd
+set_property library xil_defaultlib [get_files  c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/hdl/ws2812_ip_v1_0_M00_AXI_ws2812.vhd]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+save_bd_design
