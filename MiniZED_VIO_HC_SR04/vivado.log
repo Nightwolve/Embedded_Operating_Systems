@@ -208,3 +208,4 @@ regenerate_bd_layout -routing
 save_bd_design
 Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
 Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui> 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'

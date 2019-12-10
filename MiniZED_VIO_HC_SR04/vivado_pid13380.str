@@ -579,3 +579,15 @@ selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTI
 dismissDialog("Save Design"); // by (cl)
 // Elapsed time: 27 seconds
 selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (O)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,316 MB. GUI used memory: 111 MB. Current time: 12/10/19, 10:46:57 AM CET
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // O (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 225, 109); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
