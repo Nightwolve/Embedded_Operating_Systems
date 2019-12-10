@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 10 08:36:44 2019
+# Process ID: 17048
+# Current directory: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17944 C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.xpr
+# Log file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vivado.log
+# Journal file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd', nor could it be found using path 'C:/Users/Bart/Documents/GitHub/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/Bart/Documents/GitHub/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 800.547 ; gain = 167.918
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:HC_SR04:1.0 - HC_SR04_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_matrix
+Successfully read diagram <matrix> from BD file <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1048.980 ; gain = 14.613
+ipx::edit_ip_in_project -upgrade true -name matrix_ip_v1_0_project -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.tmp/matrix_ip_v1_0_project c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/bart/documents/github/embedded_operating_systems/embedded_operating_systems/minized_vio_hc_sr04/minized_axi_hc_sr04.tmp/matrix_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1048.980 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1048.980 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name ws2812_ip_v1_0_project -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.tmp/ws2812_ip_v1_0_project c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/bart/documents/github/embedded_operating_systems/embedded_operating_systems/minized_vio_hc_sr04/minized_axi_hc_sr04.tmp/ws2812_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1051.406 ; gain = 2.426
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1067.211 ; gain = 18.230
+update_compile_order -fileset sources_1
+current_project MiniZED_AXI_HC_SR04
+import_files -norecurse C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vhdlnoclock.vhd
+update_compile_order -fileset sources_1
+current_project ws2812_ip_v1_0_project
+add_files -norecurse -copy_to c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/src C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 10 10:09:22 2019...

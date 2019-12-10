@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 10 08:36:44 2019
+# Process ID: 17048
+# Current directory: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17944 C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.xpr
+# Log file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vivado.log
+# Journal file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+ipx::edit_ip_in_project -upgrade true -name matrix_ip_v1_0_project -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.tmp/matrix_ip_v1_0_project c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name ws2812_ip_v1_0_project -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.tmp/ws2812_ip_v1_0_project c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project MiniZED_AXI_HC_SR04
+import_files -norecurse C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vhdlnoclock.vhd
+update_compile_order -fileset sources_1
+current_project ws2812_ip_v1_0_project
+add_files -norecurse -copy_to c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/src C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd
+update_compile_order -fileset sources_1
+close_project

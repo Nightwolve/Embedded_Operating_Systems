@@ -2,69 +2,88 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Dec  3 10:30:46 2019
-# Process ID: 9456
-# Current directory: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18212 C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.xpr
-# Log file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vivado.log
-# Journal file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04\vivado.jou
+# Start of session at: Tue Dec 10 10:38:08 2019
+# Process ID: 13380
+# Current directory: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3648 C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.xpr
+# Log file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vivado.log
+# Journal file: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/Bart/Documents/GitHub/Embedded-Operating-System/Zynq/MiniZED_VIO_HC_SR04' since last save.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Bart/Documents/GitHub/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd', nor could it be found using path 'C:/Users/Bart/Documents/GitHub/Embedded-Operating-System/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd'.
+open_project C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd'.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/Bart/Documents/GitHub/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/Bart/Documents/GitHub/Embedded-Operating-System/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.ip_user_files', nor could it be found using path 'C:/Users/Bart/Documents/GitHub/Embedded-Operating-System/Zynq/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.ip_user_files'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Users/20002890/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 755.773 ; gain = 128.750
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 788.387 ; gain = 158.969
 update_compile_order -fileset sources_1
-update_module_reference design_1_HC_SR04_0_0
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/design_1/design_1.bd}
 Adding component instance block -- xilinx.com:module_ref:vhdlnoclk:1.0 - vhdlnoclk_0
-CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/vhdlnoclk_0'.
-Given inputs for module-source, Top-module name : vhdlnoclk, Module Type : RTL.
-Please review and update or add design-sources to this project to resolve this module-reference.
 Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
-Adding component instance block -- xilinx.com:module_ref:HC_SR04:1.0 - HC_SR04_0
 Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:module_ref:HC_SR04:1.0 - HC_SR04_0
 WARNING: [BD 41-1731] Type mismatch between connected pins: /vhdlnoclk_0/clk65MHz(undef) and /clk_wiz_0/clk_in1(clk)
-Successfully read diagram <design_1> from BD file <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/design_1/design_1.bd>
-Upgrading 'C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3420] Updated design_1_HC_SR04_0_0 to use current project options
-Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\design_1\design_1.bd> 
-Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-upgrade_ip: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1011.242 ; gain = 0.000
-update_module_reference: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1011.242 ; gain = 0.000
-create_bd_design "matrix"
-Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
-update_compile_order -fileset sources_1
+Successfully read diagram <design_1> from BD file <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1007.578 ; gain = 0.000
+set_property  ip_repo_paths  {c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0 c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0 C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/MATRIX_IP} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/MATRIX_IP'.
+set_property BOARD_PART_REPO_PATHS {C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
+set_param board.repoPaths {C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
+set_property board_part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 [current_project]
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+ERROR: [Board 49-71] The board_part definition was not found for trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0. The project's board_part property was not set, but the project's part property was set to xc7z007sclg225-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
+set_property board_part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 [current_project]
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Trenz_Electronic/TE0803_5EV_1E/2.0/2.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+ERROR: [Board 49-71] The board_part definition was not found for trenz.biz:te0803_5ev_1e_tebf0808:part0:2.0. The project's board_part property was not set, but the project's part property was set to xc7z007sclg225-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:HC_SR04:1.0 - HC_SR04_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_matrix
+Successfully read diagram <matrix> from BD file <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd>
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix:1.0 matrix_0
 endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_cells axi_gpio_matrix]
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+make_bd_pins_external  [get_bd_cells matrix_0]
+make_bd_intf_pins_external  [get_bd_cells matrix_0]
 endgroup
-delete_bd_objs [get_bd_cells axi_gpio_0]
-create_bd_cell -type module -reference HC_SR04 HC_SR04_0
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_cells matrix_0]'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_cells matrix_0]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property location {4 953 257} [get_bd_cells matrix_0]
+delete_bd_objs [get_bd_intf_ports GPIO_M]
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+make_bd_pins_external  [get_bd_pins matrix_0/led_out]
 endgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {16} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_0]
+save_bd_design
+Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
+Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui> 
+set_property name matrix_out [get_bd_ports led_out_0]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+set_property location {3 834 276} [get_bd_cells matrix_0]
 startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins HC_SR04_0/clk]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
-INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
-Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4120_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {pl_led_g ( pl_led_g ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
-INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_0]
-INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE pl_led_g [get_bd_cells /axi_gpio_0]
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {pl_led_g ( pl_led_g ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_1]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE pl_led_g [get_bd_cells /axi_gpio_1]
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Digilent/arty-a7-100/E.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Digilent/arty-a7-35/E.0/1.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Digilent/arty-s7-25/E.0/1.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
@@ -167,161 +186,25 @@ WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_200_2c:part0:1.0 a
 WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_200_2i:part0:1.0 available at C:/Users/Bart/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store/XilinxBoardStore/Vivado/2019.1/boards/Trenz_Electronic/TE0712_200_2I/1.0/1.0/board.xml as part xc7a200tfbg484-2 specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 pl_led_g
-INFO: [board_rule 100-100] connect_bd_intf_net /pl_led_g /axi_gpio_0/GPIO
-endgroup
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
-endgroup
-regenerate_bd_layout
-delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports pl_led_g]
-startgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {15} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_0]
-endgroup
-connect_bd_net [get_bd_pins HC_SR04_0/sonar_trig] [get_bd_pins axi_gpio_0/gpio_io_i]
-WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
-regenerate_bd_layout
-regenerate_bd_layout -routing
-undo
-INFO: [Common 17-17] undo 'regenerate_bd_layout -routing'
-undo
-INFO: [Common 17-17] undo 'regenerate_bd_layout'
-undo
-INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins HC_SR04_0/sonar_trig] [get_bd_pins axi_gpio_0/gpio_io_i]'
-connect_bd_net [get_bd_pins HC_SR04_0/centimeter] [get_bd_pins axi_gpio_0/gpio_io_i]
-WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
-regenerate_bd_layout
-regenerate_bd_layout -routing
-startgroup
-create_bd_port -dir I sonar_echo
-connect_bd_net [get_bd_pins /HC_SR04_0/sonar_echo] [get_bd_ports sonar_echo]
-endgroup
-startgroup
-create_bd_port -dir O sonar_trig
-connect_bd_net [get_bd_pins /HC_SR04_0/sonar_trig] [get_bd_ports sonar_trig]
-endgroup
-regenerate_bd_layout
+INFO: [board_rule 100-100] connect_bd_intf_net /pl_led_g /axi_gpio_1/GPIO
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_cells axi_gpio_1]
+delete_bd_objs [get_bd_intf_ports pl_led_g]
 WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
 startgroup
-set_property -dict [list CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_CLK1_PORT {0}] [get_bd_cells processing_system7_0]
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1}] [get_bd_cells processing_system7_0]
 endgroup
-save_bd_design
-Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
-Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui> 
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
+Slave segment </axi_gpio_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4120_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/matrix_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins matrix_0/S00_AXI]
+Slave segment </matrix_0/S00_AXI/S00_AXI_reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
 endgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
-startgroup
-make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_1/GPIO]
-endgroup
-set_property name GPIO_M [get_bd_intf_ports GPIO_0]
-set_property location {1007 236} [get_bd_intf_ports GPIO_M]
-set_property name axi_gpio_matrix [get_bd_cells axi_gpio_1]
-create_peripheral xilinx.com user matrix_ip 1.0 -dir C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo
-add_peripheral_interface S00_AXI_ws2812 -interface_mode master -axi_type lite [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
-generate_peripheral -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
-write_peripheral [ipx::find_open_core xilinx.com:user:matrix_ip:1.0]
-set_property  ip_repo_paths  C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo/matrix_ip_1.0 [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
-ipx::edit_ip_in_project -upgrade true -name edit_matrix_ip_v1_0 -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1346.586 ; gain = 210.188
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1360.016 ; gain = 223.617
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-update_compile_order -fileset sources_1
-close_project
-create_peripheral xilinx.com user ws2812_ip 1.0 -dir C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo
-add_peripheral_interface M00_AXI_ws2812 -interface_mode master -axi_type lite [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
-generate_peripheral -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
-write_peripheral [ipx::find_open_core xilinx.com:user:ws2812_ip:1.0]
-set_property  ip_repo_paths  {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo/ws2812_ip_1.0 C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0} [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
-ipx::edit_ip_in_project -upgrade true -name edit_ws2812_ip_v1_0 -directory C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/../ip_repo c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1641.102 ; gain = 49.684
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1641.102 ; gain = 49.684
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_pins' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
-ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-ERROR: [Ip 78-125] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
-
-update_compile_order -fileset sources_1
-close [ open C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd w ]
-add_files C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/ws2812.vhd
-set_property library xil_defaultlib [get_files  c:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/hdl/ws2812_ip_v1_0_M00_AXI_ws2812.vhd]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close_project
+regenerate_bd_layout
+regenerate_bd_layout -routing
+connect_bd_net [get_bd_pins matrix_0/clk_in] [get_bd_pins processing_system7_0/FCLK_CLK0]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /matrix_0/clk_in(undef)
+regenerate_bd_layout
+regenerate_bd_layout -routing
 save_bd_design
-Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
-Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui> 
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 11:46:35 2019...
+Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd> 
+Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui> 

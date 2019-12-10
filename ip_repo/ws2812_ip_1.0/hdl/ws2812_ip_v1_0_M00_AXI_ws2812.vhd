@@ -702,9 +702,10 @@ begin
 	  end process;                                                                                      
 
 	-- Add user logic here
-
+matrix: WS2812
+port map(
       clk => clk,
-      d_out => d_out
+      d_out => d_out);
 
 	-- User logic ends
 
