@@ -546,3 +546,434 @@ dismissDialog("Create HDL Wrapper"); // by (cl)
 // WARNING: HEventQueue.dispatchEvent() is taking  7134 ms.
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7702 ms. Increasing delay to 3000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 14 ms. Decreasing delay to 2014 ms.
+// Elapsed time: 149 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// ad (cl): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ad)
+dismissDialog("Unable to Open File"); // ad (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 89 MB. Current time: 12/17/19, 1:58:16 PM CET
+// Elapsed time: 10 seconds
+dismissFileChooser();
+// 'dJ' command handler elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vhdlnoclock.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cl)
+// c (cl): Add Sources: addNotify
+// bV (c): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bV)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Import Source Conflicts"); // bV (c)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,337 MB. GUI used memory: 90 MB. Current time: 12/17/19, 1:58:42 PM CET
+// Tcl Message: import_files -force -norecurse C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vhdlnoclock.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 4, false); // B (F, cl)
+selectCodeEditor("vhdlnoclock.vhd", 99, 382); // cl (w, cl)
+selectCodeEditor("vhdlnoclock.vhd", 104, 381); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// ad (cl): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ad)
+dismissDialog("Unable to Open File"); // ad (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vhdlnoclk(Behavioral) (vhdlnoclock.vhd)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("vhdlnoclock.vhd", 106, 177); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, vhdlnoclock.vhd]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd 
+// Elapsed time: 30 seconds
+selectCodeEditor("vhdlnoclock.vhd", 226, 142); // cl (w, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd)]", 3); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), HC_SR04_0 : matrix_HC_SR04_0_0 (Module Reference Wrapper)]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), ps7_0_axi_periph : matrix_ps7_0_axi_periph_0(STRUCTURE) (matrix.vhd)]", 9); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), ps7_0_axi_periph : matrix_ps7_0_axi_periph_0(STRUCTURE) (matrix.vhd), s00_couplers : s00_couplers_imp_1FEZWOK(STRUCTURE) (matrix.vhd)]", 12); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1); // B (F, cl)
+// Elapsed time: 111 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 302 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 392, 214); // cl (w, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 184, 173); // cl (w, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 206, 169); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 280, 112); // cl (w, cl)
+// Elapsed time: 181 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+// Elapsed time: 206 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MiniZED_AXI_HC_SR04.xdc]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 539, 150); // cl (w, cl)
+typeControlKey((HResource) null, "MiniZED_AXI_HC_SR04.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 1, 30); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MiniZED_AXI_HC_SR04.xdc", 2); // k (j, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 3, 26); // cl (w, cl)
+// Elapsed time: 96 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 2, 27); // cl (w, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 1, 28); // cl (w, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+// Elapsed time: 189 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 1, 28); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MiniZED_AXI_HC_SR04.xdc", 2); // k (j, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 7, 232); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 456, 212); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), HC_SR04_0 : matrix_HC_SR04_0_0 (Module Reference Wrapper)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+// Elapsed time: 12 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "bttns", true); // Y (Q, cl)
+// Tcl Command: 'set_property name bttns [get_bd_ports gpio2_io_i_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name bttns [get_bd_ports gpio2_io_i_0] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 246, 431, 1254, 597, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectButton((HResource) null, "Properties_settings"); // u (f, cl): TRUE
+selectLabel((HResource) null, "gpio2_io_i_0_1"); // l (dx, cl)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MiniZED_AXI_HC_SR04.xdc", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "btns"); // Y (Q, cl)
+// Tcl Command: 'set_property name btns [get_bd_ports bttns]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name btns [get_bd_ports bttns] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1027, 238, 1254, 597, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ae (an, cl)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1042, 241, 1254, 597, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ae (an, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPAND_ALL_RSB_BLOCK, "Expand All"); // ah (cl, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EXPAND_ALL_RSB_BLOCK
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property name btns [get_bd_ports bttns]' 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // B (f, cl)
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 516, 238, 1254, 597, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ae (an, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_COLLAPSE_ALL_RSB_BLOCK, "Collapse All"); // ah (cl, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_COLLAPSE_ALL_RSB_BLOCK
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // B (f, cl)
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+// Elapsed time: 21 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "btns", true); // Y (Q, cl)
+// Tcl Command: 'set_property name btns [get_bd_ports bttns]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name btns [get_bd_ports bttns] 
+// Elapsed time: 46 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), ps7_0_axi_periph : matrix_ps7_0_axi_periph_0(STRUCTURE) (matrix.vhd)]", 9); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd), HC_SR04_0 : matrix_HC_SR04_0_0 (Module Reference Wrapper)]", 4); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd), matrix(STRUCTURE) (matrix.vhd)]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_wrapper(STRUCTURE) (matrix_wrapper.vhd), matrix_i : matrix (matrix.bd)]", 2); // B (F, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MiniZED_AXI_HC_SR04.xdc", 2); // k (j, cl)
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 9, 44); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MiniZED_AXI_HC_SR04.xdc", 1); // k (j, cl)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd>  Wrote  : <C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/ui/bd_30bd5ac1.ui>  
+// A (cl): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // by (cl)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 5 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <C:\Users\Bart\Documents\GitHub\Embedded_Operating_Systems\Embedded_Operating_Systems\MiniZED_VIO_HC_SR04\MiniZED_AXI_HC_SR04.srcs\sources_1\bd\matrix\matrix.bd>  
+// Tcl Message: VHDL Output written to : C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/synth/matrix.vhd VHDL Output written to : C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/sim/matrix.vhd VHDL Output written to : C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/hdl/matrix_wrapper.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block HC_SR04_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M . INFO: [BD 41-1029] Generation completed for the IP Integrator block matrix_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/hw_handoff/matrix.hwh Generated Block Design Tcl file C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/hw_handoff/matrix_bd.tcl Generated Hardware Definition File C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/synth/matrix.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec 17 14:25:17 2019] Launched impl_1... Run output will be captured here: C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 1401.293 ; gain = 69.879 
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: updateGUI() is taking  23306 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6024 ms. Increasing delay to 18072 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 80 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 3641ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4786 ms. Increasing delay to 4000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 9537ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 133 ms. Decreasing delay to 2133 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5943 ms. Increasing delay to 5000 ms.
+// Elapsed time: 23 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 22, 483); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  4713 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10688 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4750 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 21379 ms. Increasing delay to 64137 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10572 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4903 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4723 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4750 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  3348 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1007 ms. Decreasing delay to 3007 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4475 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10800 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4698 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4754 ms. Increasing delay to 14262 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 69 ms. Decreasing delay to 2069 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,337 MB. GUI used memory: 103 MB. Current time: 12/17/19, 2:28:52 PM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6072 ms. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4803 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4753 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9513 ms. Increasing delay to 28539 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4611 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1450 ms. Decreasing delay to 3450 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 351 seconds
+selectCodeEditor("MiniZED_AXI_HC_SR04.xdc", 252, 421); // cl (w, cl)
+// [GUI Memory]: 169 MB (+8335kb) [00:44:43]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 193 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1553 ms.
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)

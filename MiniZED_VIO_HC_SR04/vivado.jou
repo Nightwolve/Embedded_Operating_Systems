@@ -48,3 +48,22 @@ make_wrapper -files [get_files C:/Users/Bart/Documents/GitHub/Embedded_Operating
 add_files -norecurse C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/hdl/matrix_wrapper.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+import_files -force -norecurse C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/vhdlnoclock.vhd
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+export_ip_user_files -of_objects  [get_files C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Github/Own/Embedded-FPGA/MiniZED/vhdlnoclock.vhd
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+open_bd_design {C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.srcs/sources_1/bd/matrix/matrix.bd}
+set_property name bttns [get_bd_ports gpio2_io_i_0]
+set_property name btns [get_bd_ports bttns]
+undo
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+set_property name btns [get_bd_ports bttns]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

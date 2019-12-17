@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/devWorks/MiniZED_AXI_HC_SR04/MiniZED_AXI_HC_SR04.runs/impl_1'
+HD_PWD='C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+EAStep vivado -log matrix_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source matrix_wrapper.tcl -notrace
 
 

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Tue Dec 17 13:55:28 2019
+--Date        : Tue Dec 17 14:24:27 2019
 --Host        : GrispenB running 64-bit major release  (build 9200)
 --Command     : generate_target matrix.bd
 --Design      : matrix
@@ -1121,7 +1121,7 @@ entity matrix is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    gpio2_io_i_0 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    btns : in STD_LOGIC_VECTOR ( 1 downto 0 );
     matrix_out : out STD_LOGIC;
     sonar_echo : in STD_LOGIC;
     sonar_trig : out STD_LOGIC
@@ -1458,7 +1458,7 @@ architecture STRUCTURE of matrix is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  gpio2_io_i_0_1(1 downto 0) <= gpio2_io_i_0(1 downto 0);
+  gpio2_io_i_0_1(1 downto 0) <= btns(1 downto 0);
   matrix_out <= matrix_0_led_out;
   sonar_echo_1 <= sonar_echo;
   sonar_trig <= HC_SR04_0_sonar_trig;

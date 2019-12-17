@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Tue Dec 17 13:55:28 2019
+--Date        : Tue Dec 17 14:24:27 2019
 --Host        : GrispenB running 64-bit major release  (build 9200)
 --Command     : generate_target matrix_wrapper.bd
 --Design      : matrix_wrapper
@@ -34,7 +34,7 @@ entity matrix_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    gpio2_io_i_0 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    btns : in STD_LOGIC_VECTOR ( 1 downto 0 );
     matrix_out : out STD_LOGIC;
     sonar_echo : in STD_LOGIC;
     sonar_trig : out STD_LOGIC
@@ -68,7 +68,7 @@ architecture STRUCTURE of matrix_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 15 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 1 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 1 downto 0 );
-    gpio2_io_i_0 : in STD_LOGIC_VECTOR ( 1 downto 0 )
+    btns : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component matrix;
 begin
@@ -95,7 +95,7 @@ matrix_i: component matrix
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      gpio2_io_i_0(1 downto 0) => gpio2_io_i_0(1 downto 0),
+      btns(1 downto 0) => btns(1 downto 0),
       matrix_out => matrix_out,
       sonar_echo => sonar_echo,
       sonar_trig => sonar_trig

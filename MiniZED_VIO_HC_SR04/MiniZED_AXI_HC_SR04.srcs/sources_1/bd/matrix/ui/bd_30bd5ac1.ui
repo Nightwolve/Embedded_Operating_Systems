@@ -7,7 +7,7 @@ preplace port FIXED_IO -pg 1 -lvl 4 -x 1070 -y 100 -defaultsOSRD
 preplace port sonar_echo -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
 preplace port sonar_trig -pg 1 -lvl 4 -x 1070 -y 290 -defaultsOSRD
 preplace port matrix_out -pg 1 -lvl 4 -x 1070 -y 680 -defaultsOSRD
-preplace portBus gpio2_io_i_0 -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
+preplace portBus btns -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 150 -defaultsOSRD
 preplace inst HC_SR04_0 -pg 1 -lvl 3 -x 910 -y 300 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 910 -y 460 -defaultsOSRD
@@ -28,7 +28,7 @@ preplace netloc processing_system7_0_DDR 1 1 3 NJ 80 NJ 80 NJ
 preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 750 460n
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450 200n
 levelinfo -pg 1 0 230 600 910 1070
-pagesize -pg 1 -db -bbox -sgen -160 0 1190 770
+pagesize -pg 1 -db -bbox -sgen -130 0 1190 770
 "
 }
 {

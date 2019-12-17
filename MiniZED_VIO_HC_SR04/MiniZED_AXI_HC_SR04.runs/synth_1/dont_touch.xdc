@@ -3,19 +3,31 @@
 
 # XDC: new/MiniZED_AXI_HC_SR04.xdc
 
-# Block Designs: bd/design_1/design_1.bd
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
+# Block Designs: bd/matrix/matrix.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix || ORIG_REF_NAME==matrix} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_vhdlnoclk_0_0/design_1_vhdlnoclk_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_vhdlnoclk_0_0 || ORIG_REF_NAME==design_1_vhdlnoclk_0_0} -quiet] -quiet
+# IP: bd/matrix/ip/matrix_processing_system7_0_0/matrix_processing_system7_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_processing_system7_0_0 || ORIG_REF_NAME==matrix_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_0_0 || ORIG_REF_NAME==design_1_clk_wiz_0_0} -quiet] -quiet
+# IP: bd/matrix/ip/matrix_HC_SR04_0_0/matrix_HC_SR04_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_HC_SR04_0_0 || ORIG_REF_NAME==matrix_HC_SR04_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_HC_SR04_0_0/design_1_HC_SR04_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_HC_SR04_0_0 || ORIG_REF_NAME==design_1_HC_SR04_0_0} -quiet] -quiet
+# IP: bd/matrix/ip/matrix_axi_gpio_0_1/matrix_axi_gpio_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_axi_gpio_0_1 || ORIG_REF_NAME==matrix_axi_gpio_0_1} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_vio_0_0 || ORIG_REF_NAME==design_1_vio_0_0} -quiet] -quiet
+# IP: bd/matrix/ip/matrix_ps7_0_axi_periph_0/matrix_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_ps7_0_axi_periph_0 || ORIG_REF_NAME==matrix_ps7_0_axi_periph_0} -quiet] -quiet
 
-# XDC: bd/design_1/design_1_ooc.xdc
+# IP: bd/matrix/ip/matrix_rst_ps7_0_50M_0/matrix_rst_ps7_0_50M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_rst_ps7_0_50M_0 || ORIG_REF_NAME==matrix_rst_ps7_0_50M_0} -quiet] -quiet
+
+# IP: bd/matrix/ip/matrix_matrix_0_0/matrix_matrix_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_matrix_0_0 || ORIG_REF_NAME==matrix_matrix_0_0} -quiet] -quiet
+
+# IP: bd/matrix/ip/matrix_xbar_0/matrix_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_xbar_0 || ORIG_REF_NAME==matrix_xbar_0} -quiet] -quiet
+
+# IP: bd/matrix/ip/matrix_auto_pc_0/matrix_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==matrix_auto_pc_0 || ORIG_REF_NAME==matrix_auto_pc_0} -quiet] -quiet
+
+# XDC: bd/matrix/matrix_ooc.xdc

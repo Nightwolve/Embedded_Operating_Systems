@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/devWorks/MiniZED_AXI_HC_SR04/MiniZED_AXI_HC_SR04.runs/synth_1'
+HD_PWD='C:/Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/MiniZED_VIO_HC_SR04/MiniZED_AXI_HC_SR04.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+EAStep vivado -log matrix_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source matrix_wrapper.tcl
