@@ -26,14 +26,14 @@ use IEEE.NUMERIC_STD.ALL;
 library UNISIM;
 use UNISIM.VComponents.all;
 
-entity vhdlnoclk is
+entity vhdlnoclock is
   Port (
     clk65MHz : out std_logic
     -- g_led : out std_logic
   );
-end vhdlnoclk;
+end vhdlnoclock;
 
-architecture Behavioral of vhdlnoclk is
+architecture Behavioral of vhdlnoclock is
     signal counter      : std_logic_vector(25 downto 0):=(others=>'0');
     signal i_clk        : std_logic;
     signal buf_i_clk    : std_logic;
