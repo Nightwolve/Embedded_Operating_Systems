@@ -61,8 +61,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_vhdlnoclk_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_HC_SR04_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vhdlnoclk_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_vio_0_0"/>
 </GenRun>

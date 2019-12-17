@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="c:/users/bart/documents/github/embedded_operating_systems/embedded_operating_systems/minized_vio_hc_sr04/minized_axi_hc_sr04.tmp/ws2812_ip_v1_0_project/ws2812_ip_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="32b02b844c094b8597560d9950477d2b"/>
+    <Option Name="Id" Val="1f33bfac18744b31a70f3c10d5b0dbb9"/>
     <Option Name="Part" Val="xc7z007sclg225-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -25,6 +25,7 @@
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/matrix_ip_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/MATRIX_IP"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -64,12 +65,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../../../../Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/src/ws2812.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../../../../../../../../Users/Bart/Documents/GitHub/Embedded_Operating_Systems/Embedded_Operating_Systems/ip_repo/ws2812_ip_1.0/hdl/ws2812_ip_v1_0_M00_AXI_ws2812.vhd">
         <FileInfo>
           <Attr Name="Library" Val=""/>
